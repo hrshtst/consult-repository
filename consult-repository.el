@@ -137,7 +137,7 @@ process is unable to start, return an elisp error object."
     :category file
     :face consult-file
     :history file-name-history
-    :enabled ,(lambda () (fboundp 'straight-use-package))
+    :enabled ,(lambda () (fboundp 'straight--repos-dir))
     :items ,#'consult-repository--straight-repos)
   "Straight repository source for `consult-repository--pick'.")
 
