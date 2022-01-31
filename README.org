@@ -34,3 +34,12 @@ This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can inst
 - ~consult-repository-find~: Selects a repository from sources, then
   filters the file paths of all files in the directory using
   ~affe-find~ or ~consult-find~.
+
+* TODO Checklists [0/3]
+:properties:
+:description: TODO items
+:end:
+
+- [ ] Integration with [[https://github.com/oantolin/embark][Embark]].
+- [ ] Add source from [[https://github.com/bbatsov/projectile][Projectile]].
+- [ ] Add configuration example to add source in a local directory.
