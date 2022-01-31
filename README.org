@@ -30,7 +30,7 @@ This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can inst
   filters the file paths of all files in the directory using
   ~affe-find~ or ~consult-find~.
 
-* TODO Checklists [0/4]
+* TODO Checklists [0/5]
 :properties:
 :description: TODO items
 :end:
@@ -39,3 +39,4 @@ This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can inst
 - [ ] Add source from [[https://github.com/bbatsov/projectile][Projectile]].
 - [ ] Add configuration example to add source in a local directory.
 - [ ] Disable file preview provided by consult by default.
+- [ ] Add example to bind keys to commands.
