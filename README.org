@@ -1,0 +1,36 @@
+#+title: consult-repository
+#+author: Hiroshi Atsuta
+
+Consult-repository provides a [[https://github.com/minad/consult][consult]] interface to select a repository
+from several sources specified in advance then find or grep within
+that repository.
+
+* Installation and configuration
+:properties:
+:description: How to install and configuration example
+:end:
+
+This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can install it via
+[[https://github.com/raxod502/straight.el][straight.el]] with the following code:
+
+#+begin_src emacs-lisp
+  (use-package consult-repository
+    :straight (:host github :repo "hrshtst/consult-repository")
+    :after consult
+    :config
+    ;; Set manual preview key to `consult-repository-grep'.
+    (consult-customize consult-repository-grep
+                       :preview-key (kbd "M-.")))
+#+end_src
+
+* Commands
+:properties:
+:description: Available commands
+:end:
+
+- ~consult-repository-grep~: Selects a repository from sources, then
+  filters the content of all files in the directory using ~affe-grep~
+  or ~consult-grep~.
+- ~consult-repository-find~: Selects a repository from sources, then
+  filters the file paths of all files in the directory using
+  ~affe-find~ or ~consult-find~.
