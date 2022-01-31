@@ -15,12 +15,7 @@ This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can inst
 
 #+begin_src emacs-lisp
   (use-package consult-repository
-    :straight (:host github :repo "hrshtst/consult-repository")
-    :after consult
-    :config
-    ;; Set manual preview key to `consult-repository-grep'.
-    (consult-customize consult-repository-grep
-                       :preview-key (kbd "M-.")))
+    :straight (:host github :repo "hrshtst/consult-repository"))
 #+end_src
 
 * Commands
@@ -35,7 +30,7 @@ This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can inst
   filters the file paths of all files in the directory using
   ~affe-find~ or ~consult-find~.
 
-* TODO Checklists [0/3]
+* TODO Checklists [0/4]
 :properties:
 :description: TODO items
 :end:
@@ -43,3 +38,4 @@ This package is unavailable on [[https://melpa.org/#/][melpa]] yet. You can inst
 - [ ] Integration with [[https://github.com/oantolin/embark][Embark]].
 - [ ] Add source from [[https://github.com/bbatsov/projectile][Projectile]].
 - [ ] Add configuration example to add source in a local directory.
+- [ ] Disable file preview provided by consult by default.
